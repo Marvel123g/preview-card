@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--Very-dark-blue: hsl(217, 54%, 11%);
+--Very-dark-blue: hsl(216, 50%, 16%);
+--Very-dark-blue: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card{
+    background-color: hsl(216, 50%, 16%);
+    width: 20rem;
+    margin: 20px;
+    border-radius: 20px;
+}
+.header{
+    position: relative;
+    width: 20rem;
+    cursor: pointer;
+}
+.main-image{
+    margin: 0px ;
+    padding:15px;
+    width:100%;
+    border-radius: 25px;
+}
+
+.icon{
+    position: absolute;
+    top: 8rem;
+    left: 7.5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+
+.header:hover .icon{
+    opacity: 1;
+}
+h2{
+    color: var(--White);
+    margin-top: -10px;
+    padding: 15px;
+}
+h2:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+p {
+    color: var(--Soft-blue);
+    padding: 15px;
+}
+.days{
+    display: flex;
+    gap: 70px;
+}
+.spaced-line{
+    margin: 0 15px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+.days img{
+    width: 15px;
+    margin: 0;
+    padding: 0;
+}
+.ethereum{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    color: var(--Cyan);
+}
+.days p{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.footer img{
+    width: 5rem;
+    padding: 13px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: var(--White);
+}
+a:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+span{
+    color: var(--Soft-blue);
+}
+
+
+@media (max-width:600px) {
+    body{
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .card{
+        width: 375px;
+    }
+    .main-image{
+        width: 375px;
+    }
+    .icon{
+        width: 2rem;
+        top: 10.5rem;
+        left: 10.9rem;
+    }
+}
+@media (max-width:420px) {
+    body{
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .card{
+        width: 300px;
+    }
+    .main-image{
+        width: 300px;
+    }
+    .icon{
+        width: 2rem;
+        top: 8.4rem;
+        left: 8.4rem;
+    }
+}
